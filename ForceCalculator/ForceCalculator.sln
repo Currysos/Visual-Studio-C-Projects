@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.329
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForceCalculator", "ForceCalculator\ForceCalculator.csproj", "{30295764-B87C-4CF9-BF0D-B1071F5F8608}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{30295764-B87C-4CF9-BF0D-B1071F5F8608}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30295764-B87C-4CF9-BF0D-B1071F5F8608}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30295764-B87C-4CF9-BF0D-B1071F5F8608}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30295764-B87C-4CF9-BF0D-B1071F5F8608}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B7342D24-CAA2-4C37-91C0-4D5F13FBEE26}
+	EndGlobalSection
+EndGlobal

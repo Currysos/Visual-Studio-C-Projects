@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29509.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sum square difference", "Sum square difference\Sum square difference.csproj", "{32AC86EF-8D41-4D5E-B586-34F9747483DE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{32AC86EF-8D41-4D5E-B586-34F9747483DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32AC86EF-8D41-4D5E-B586-34F9747483DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32AC86EF-8D41-4D5E-B586-34F9747483DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32AC86EF-8D41-4D5E-B586-34F9747483DE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AEF8F05E-BA92-41F2-9691-7AD6586C74D5}
+	EndGlobalSection
+EndGlobal
