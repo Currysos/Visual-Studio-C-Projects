@@ -1,0 +1,30 @@
+﻿[
+  {
+    "outputFile": "wwwroot/css/Style.css",
+    "inputFile": "wwwroot/scss/FooterStyle.scss",
+    "minify": {
+      "enabled": true
+    }
+  },
+  {
+    "outputFile": "wwwroot/css/Style.css",
+    "inputFile": "wwwroot/scss/MainStyle.scss",
+    "minify": {
+      "enabled": true
+    }
+  },
+  {
+    "outputFile": "wwwroot/css/Style.css",
+    "inputFile": "wwwroot/scss/Variables.scss",
+    "minify": {
+      "enabled": true
+    }
+  },
+  {
+    "outputFile": "wwwroot/css/Style.css",
+    "inputFile": "wwwroot/scss/HeaderStyle.scss",
+    "minify": {
+      "enabled": true
+    }
+  }
+]

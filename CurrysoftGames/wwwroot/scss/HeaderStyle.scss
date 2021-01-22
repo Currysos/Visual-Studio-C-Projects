@@ -1,0 +1,64 @@
+﻿@import "Variables.scss";
+
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    font-family: Calibri;
+    grid-template-areas: "Header" "Main" "Footer";
+    grid-template-rows: auto auto auto;
+
+    .TopImage {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 0px;
+        z-index: -1;
+    }
+
+    header {
+        grid-area: Header;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $HeaderBG;
+        height: 100%;
+        width: auto;
+
+        h1 {
+            font-size: $H1Size;
+            width: auto;
+            height: 100%;
+            text-align: center;
+            margin: $HeaderMargin;
+            font-family: $MainFont;
+        }
+
+        nav {
+            width: auto;
+            height: 100%;
+            margin: $HeaderMargin;
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                text-decoration: none;
+                list-style: none;
+
+                li {
+                    text-decoration: none;
+                    margin: 10px;
+
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        font-size: $PSsize;
+                        font-family: $MainFont;
+                    }
+                }
+            }
+        }
+    }
+}
