@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="GustavNFCApp.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Name="thisPage"
+    Title="NFC Writer"
+    BindingContext="{x:Reference thisPage}">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Button">
+                <Setter Property="BorderColor" Value="Gray" />
+                <Setter Property="BorderWidth" Value="2" />
+                <Setter Property="CornerRadius" Value="10" />
+                <Setter Property="BackgroundColor" Value="WhiteSmoke" />
+            </Style>
+            <Style TargetType="Label">
+                <Setter Property="TextColor" Value="DarkSlateGray" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout HorizontalOptions="CenterAndExpand">
+        <!--  Top image  -->
+        <Image
+            Margin="50,0,50,0"
+            Aspect="AspectFit"
+            Source="Logotyp_rak.png"
+            VerticalOptions="Start" />
+
+        <!--  Function thingies  -->
+        <StackLayout Margin="100,0,100,0" HorizontalOptions="FillAndExpand">
+
+            <Entry
+                ClearButtonVisibility="WhileEditing"
+                Keyboard="Url"
+                TextChanged="Entry_TextChanged" />
+
+            <Button
+                Clicked="Button_Clicked_StartWriting_Uri"
+                IsEnabled="{Binding NfcIsEnabled}"
+                Text="SEND LINK TO TAG" />
+
+            <Button
+                Clicked="Button_Clicked_FormatTag"
+                IsEnabled="{Binding NfcIsEnabled}"
+                Text="CLEAR TAG" />
+
+            <Label
+                Margin="0,6,0,0"
+                Padding="12,6"
+                BackgroundColor="Blue"
+                HorizontalOptions="CenterAndExpand"
+                IsVisible="{Binding DeviceIsListening}"
+                Text="Listening for NFC Tag..."
+                TextColor="White" />
+
+            <Label
+                Margin="0,6,0,0"
+                Padding="12,6"
+                BackgroundColor="Red"
+                HorizontalOptions="CenterAndExpand"
+                IsVisible="{Binding NfcIsDisabled}"
+                Text="NFC IS DISABLED"
+                TextColor="White" />
+
+        </StackLayout>
+
+        <!--  Tutorial text  -->
+        <StackLayout Margin="50,0,50,0" HorizontalOptions="CenterAndExpand">
+            <Label
+                FontSize="Large"
+                HorizontalOptions="CenterAndExpand"
+                Text="HOW TO USE THE APP"
+                TextColor="DarkSlateGray" />
+
+            <Label HorizontalOptions="Start" Text="1. Make sure your device supports and has NFC turned on" />
+            <Label HorizontalOptions="Start" Text="2. Paste your music link in the input field above" />
+            <Label HorizontalOptions="Start" Text="3. Click on the 'SEND LINK TO TAG' button and put your device near the NFC tag" />
+            <Label HorizontalOptions="Start" Text="If you want to change music on an already written on tag. Make sure to clear the tag first by clicking on the 'CLEAR TAG' button" />
+        </StackLayout>
+
+        <!--  My little cute placeholder  -->
+        <Label
+            HorizontalOptions="CenterAndExpand"
+            Text="Made by: @Currysoft"
+            TextColor="Gray"
+            VerticalOptions="End" />
+
+    </StackLayout>
+</ContentPage>
