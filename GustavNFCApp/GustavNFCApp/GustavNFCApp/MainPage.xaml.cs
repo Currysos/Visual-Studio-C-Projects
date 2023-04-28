@@ -59,7 +59,6 @@ namespace GustavNFCApp
         public MainPage()
         {
             InitializeComponent();
-
         }
 
         protected async override void OnAppearing()
